@@ -1,0 +1,23 @@
+# acerbilab.github.io
+
+The organisation site of acerbilab, served at <https://acerbilab.org>.
+
+Because this repo carries the organisation's custom domain, every other acerbilab repo that
+publishes a GitHub Pages site is served under it, at `acerbilab.org/<repo>/` (for example
+`acerbilab.org/pyvbmc/`), and its `acerbilab.github.io/<repo>/` address redirects there. A
+repo that sets a custom domain of its own is the exception.
+
+`index.html` is a short list of the tools, with links to their docs and code. When the
+model-fitting hub at `acerbilab.org/model-fitting/` is live, the root redirects there.
+
+## Domain
+
+- **Registrar:** Namecheap; `acerbilab.org` is registered until 2029-09-30. If it lapses,
+  every link that uses the domain breaks.
+- **DNS** (Namecheap, Advanced DNS): four A records for `@` to GitHub Pages
+  (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`), a CNAME
+  record from `www` to `acerbilab.github.io`, and the TXT record
+  `_github-pages-challenge-acerbilab` that verifies the domain for the organisation.
+- **GitHub:** the domain is verified in the organisation's Pages settings, and set with
+  HTTPS enforced in this repo's Settings → Pages. The site deploys from `main`, at the
+  root, with no build (`.nojekyll`).

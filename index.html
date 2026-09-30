@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>acerbilab · Tools for fitting models to data</title>
+<meta name="description" content="Tools for fitting computational models to data, from Luigi Acerbi's Machine and Human Intelligence Group at the University of Helsinki: PyBADS, PyVBMC, PyIBS, and the Amortized Conditioning Engine.">
+<link rel="canonical" href="https://acerbilab.org/">
+<style>
+:root {
+	--bg: #ffffff;
+	--fg: #1b1f2a;
+	--muted: #5b6275;
+	--line: #e3e6ee;
+	--link: #2f5fd0;
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--bg: #0f1320;
+		--fg: #e7e9f0;
+		--muted: #9aa1b5;
+		--line: #262c3d;
+		--link: #8fb0ff;
+	}
+}
+* { box-sizing: border-box; }
+body {
+	margin: 0;
+	background: var(--bg);
+	color: var(--fg);
+	font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+main { max-width: 44rem; margin: 0 auto; padding: 3.5rem 1rem 3rem; }
+h1 { font-size: 2.2rem; margin: 0 0 .3rem; letter-spacing: -.01em; }
+h2 { font-size: 1.05rem; margin: 2.5rem 0 .5rem; color: var(--muted); font-weight: 600; text-transform: uppercase; letter-spacing: .06em; }
+p { margin: .4rem 0; }
+a { color: var(--link); }
+.lede { color: var(--muted); }
+ul { list-style: none; padding: 0; margin: 0; }
+li { padding: 1rem 0; border-top: 1px solid var(--line); }
+li:last-child { border-bottom: 1px solid var(--line); }
+li b { font-size: 1.1rem; }
+.links { font-size: .95rem; }
+.links a { margin-right: .9rem; white-space: nowrap; }
+footer { margin-top: 2.5rem; font-size: .95rem; color: var(--muted); }
+footer a { margin-right: .9rem; }
+</style>
+</head>
+<body>
+<main>
+	<h1>acerbilab</h1>
+	<p class="lede">Tools for fitting computational models to data, from Luigi Acerbi's <a href="https://www.helsinki.fi/en/researchgroups/machine-and-human-intelligence">Machine and Human Intelligence Group</a> at the University of Helsinki.</p>
+
+	<h2>Fit your model</h2>
+	<ul>
+		<li>
+			<b>PyBADS</b>
+			<p>Bayesian Adaptive Direct Search: fast, robust optimization for maximum-likelihood and MAP fits when the objective is rough, noisy or slow to evaluate.</p>
+			<p class="links"><a href="/pybads/">Docs</a> <a href="https://github.com/acerbilab/pybads">Python</a> <a href="https://github.com/acerbilab/bads">MATLAB (BADS)</a></p>
+		</li>
+		<li>
+			<b>PyVBMC</b>
+			<p>Variational Bayesian Monte Carlo: an approximate posterior over your parameters and an estimate of the model evidence, from a small budget of likelihood evaluations, even noisy ones.</p>
+			<p class="links"><a href="/pyvbmc/">Docs</a> <a href="https://github.com/acerbilab/pyvbmc">Python</a> <a href="https://github.com/acerbilab/vbmc">MATLAB (VBMC)</a></p>
+		</li>
+		<li>
+			<b>PyIBS</b>
+			<p>Inverse binomial sampling: unbiased, efficient estimates of the log-likelihood of models you can simulate but not write down, for data with discrete responses.</p>
+			<p class="links"><a href="https://github.com/acerbilab/pyibs">Python</a> <a href="https://github.com/acerbilab/ibs">MATLAB (IBS)</a></p>
+		</li>
+	</ul>
+
+	<h2>Next wave</h2>
+	<ul>
+		<li>
+			<b>ACE</b>
+			<p>The Amortized Conditioning Engine: one transformer, trained on simulated data, that answers inference and prediction questions in a single forward pass. Research code in active development.</p>
+			<p class="links"><a href="/amortized-conditioning-engine/">Paper</a> <a href="/nanoACE/">nanoACE playground</a></p>
+		</li>
+	</ul>
+
+	<footer>
+		<p><a href="https://github.com/acerbilab">GitHub</a> <a href="https://github.com/orgs/acerbilab/discussions">Discussions</a> <a href="https://lacerbi.github.io/">Luigi Acerbi</a></p>
+	</footer>
+</main>
+</body>
+</html>
