@@ -22,3 +22,7 @@ added here is served at `acerbilab.org/<folder>/`, unless a repository has the s
 - **GitHub:** the domain is verified in the organisation's Pages settings, and set with
   HTTPS enforced in this repo's Settings → Pages, which stores it in the `CNAME` file. The
   site deploys from `main`, at the root, with no build (`.nojekyll`).
+- **HTTPS for project sites:** the certificate covers every project site, but each repo
+  has its own "Enforce HTTPS" setting (Settings → Pages). Turn it on for every repo that
+  publishes a site; otherwise its old `acerbilab.github.io` address redirects to plain
+  `http://acerbilab.org/…`.
