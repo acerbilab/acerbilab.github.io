@@ -20,5 +20,5 @@ added here is served at `acerbilab.org/<folder>/`, unless a repository has the s
   record from `www` to `acerbilab.github.io`, and the TXT record
   `_github-pages-challenge-acerbilab` that verifies the domain for the organisation.
 - **GitHub:** the domain is verified in the organisation's Pages settings, and set with
-  HTTPS enforced in this repo's Settings → Pages. The site deploys from `main`, at the
-  root, with no build (`.nojekyll`).
+  HTTPS enforced in this repo's Settings → Pages, which stores it in the `CNAME` file. The
+  site deploys from `main`, at the root, with no build (`.nojekyll`).
