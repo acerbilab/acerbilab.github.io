@@ -7,8 +7,9 @@ publishes a GitHub Pages site is served under it, at `acerbilab.org/<repo>/` (fo
 `acerbilab.org/pyvbmc/`), and its `acerbilab.github.io/<repo>/` address redirects there. A
 repo that sets a custom domain of its own is the exception.
 
-`index.html` is a short list of the tools, with links to their docs and code. When the
-model-fitting hub at `acerbilab.org/model-fitting/` is live, the root redirects there.
+`index.html` redirects the root, `acerbilab.org`, to the hub of the lab's model-fitting
+tools at `acerbilab.org/model-fitting/` (repository `acerbilab/model-fitting`). A folder
+added here is served at `acerbilab.org/<folder>/`, unless a repository has the same name.
 
 ## Domain
 
